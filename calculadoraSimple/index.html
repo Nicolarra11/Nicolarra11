@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculadoraSimple.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+        </style>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    
+    <div class=casio>
+
+        <h1>CASIO</h1>
+
+        <!--campo del resultado-->
+        <p id="resultado">0</p> 
+
+        <!--numero 1-->
+        <p><input type="number" minlength="1" id="n1" placeholder="Primer número" required="required" ></p> 
+        
+        <!--operadores-->
+        <p>
+            <select name="operador" id="operador">
+                <option value="nada">Operador</option>
+                <option value="+">Suma (+)</option>
+                <option value="-">Resta (-)</option>
+                <option value="*">Multiplicación (x)</option>
+                <option value="/">División (/)</option>
+            </select>
+        </p>
+
+        <!--numero 2-->
+        <p> 
+            <input type="number" minlength="1" id="n2" placeholder="Segundo número" required="required" >
+        </p>
+        
+        <!--Igual-->
+        <p>
+            <center> <button class="calcular" onclick="calcularResultado()">=</button> </center>
+        </p>
+        
+        <!--Borrar-->        
+        <p>
+            <center><button  id="botonc" class="limpiar" onclick="botonC()">C</button></center>
+        </p>
+    </div>
+</body>
+
+</html>
