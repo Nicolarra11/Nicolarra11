@@ -40,7 +40,6 @@ h2 {
     
 }
 
-
 .casio select,
 .casio input {
     display: block;
@@ -48,6 +47,7 @@ h2 {
 }
 
 
+/*---------------------------------------------*/
 
 
 input[type="number"], select, button {
@@ -61,7 +61,6 @@ input[type="number"], select, button {
 }
 
 
-
 .calcular {
     background-color:#21201f;
     color: #DEDFE2;
@@ -70,17 +69,20 @@ input[type="number"], select, button {
     
 }
 
-.limpiar {
+
+.borrar {
     background-color: #21201f;
     color: #DEDFE2;
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
     font-size: 80%;
     box-shadow: inset 0 0 2px 5px #282827;
     cursor: pointer;
+    font-weight: bold;
 }
 
 
+/*pantalla*/
 #resultado {
     font-size: 30px;
     font-weight: bold;
